@@ -60,7 +60,6 @@
   font-family: var(--M);
   font-size: 14px;
   font-weight: 400;
-  color: #ffffff;
 }
 .header__nav-list-item-link:hover {
   color: var(--orange);
@@ -81,18 +80,24 @@ background: var(--orange);
     width: 100%;
 }
 @media screen and (max-width:768px) {
-    .header__nav-wrap {
-        flex-direction: column;
-    }
-    .header__nav {
-        padding-top: 42px;
-    }
+.header__nav-logo {
+  flex-direction: column;
+  align-items: center;
 }
-@media screen and (max-width:420px) {
-    .header__nav-list {
-        flex-direction: column;
-    }
-    .header__nav-list-item-link {
-        padding: 10px;
-    }
+
+}
+@media screen and (max-width:520px) {
+.header__nav-wrap {
+  flex-direction: column;
+  padding-top: 20px;
+}
+.header__nav-list-item-link {
+  padding: 20px 6px;
+}
+
 } 
+@media screen and (max-width:420px) {
+  .header__nav-list {
+    gap: 10px;
+  }
+}
