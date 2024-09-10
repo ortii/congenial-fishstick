@@ -1,0 +1,59 @@
+.banner {
+    background: url(../img/bn.png) no-repeat top center / cover;
+    flex: 2 0 auto;
+    position: relative;
+    z-index: 1;
+}
+.banner__bg {
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #070F19BF;
+}
+.banner__wrap {
+    display: flex;
+    align-items: center;
+}
+.banner__desc {
+    display: flex;
+    flex-direction: column;
+    max-width: 600px;
+    width: 100%;
+}
+.banner__desc-title {
+    font-family: var(--M);
+font-size: clamp(1.875rem, 1.046rem + 4.15vw, 4rem);
+font-weight: 700;
+color: #FFFFFF;
+margin-bottom: 30px;
+}
+.banner__desc-text {
+    font-family: var(--M);
+font-size: 16px;
+font-weight: 400;
+line-height: 24px;
+display: -webkit-box;
+overflow: hidden;
+-webkit-line-clamp: 4;
+-webkit-box-orient: vertical;
+margin-bottom: 50px;
+}
+.banner__btns {
+display: flex;
+align-items: center;
+gap: 30px;
+}
+@media screen and (max-width: 576px) {
+    .banner__desc {
+        align-items: center;
+        text-align: center;
+    }
+}
+@media screen and (max-width: 420px) {
+    .banner__btns {
+        flex-direction: column;
+    }
+}
