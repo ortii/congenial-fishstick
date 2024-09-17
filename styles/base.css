@@ -55,3 +55,17 @@ background: var(--lightorange);
 color: var(--b);
     }
 }
+body::-webkit-scrollbar {
+    width: 15px; /* Ширина всего элемента навигации */
+    height: 2px;
+  }
+  
+  body::-webkit-scrollbar-track {
+    background: #fff; /* Цвет дорожки */
+  }
+  
+  body::-webkit-scrollbar-thumb {
+    background-color: #050c26; /* Цвет бегунка */
+    border-radius: 20px; /* Округление бегунка */
+    border: 3px solid #ffff; /* Оформление границ бегунка */
+  }
